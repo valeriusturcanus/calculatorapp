@@ -11,6 +11,7 @@ $(document).ready(function() {
     $(".col-xs-3").click(function(data) {
         // THIS CONDITION CHECKS IF BUTTON PRESSED IS AN OPERATOR
         if ($(this)[0].className.indexOf("operator") !== -1) {
+
             if (Boolean(numb.firstNumber) & Boolean(!numb.secondNumber)) {
                 if ($(this).text()[25] !== "=") {
                     operator1 = $(this).text()[25];
